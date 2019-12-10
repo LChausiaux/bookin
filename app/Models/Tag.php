@@ -9,9 +9,9 @@ class Tag extends Model
     protected $fillable =  [
         'name'
     ];
-    
-    public function users()
+
+    public function stories()
     {
-        return $this->belongsToMany('App\Models\User');
+        return $this->belongsToMany(Story::class);
     }
 }

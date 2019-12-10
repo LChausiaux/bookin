@@ -17,29 +17,29 @@ class Story extends Model
         'type',
         'author_id'
     ];
-    
+
     public function author()
     {
-        return $this->belongsTo('App\Models\Author');
+        return $this->belongsTo(Author::class);
     }
-    
+
     public function chapters()
     {
-        return $this->hasMany('App\Models\Chapter');
+        return $this->hasMany(Chapter::class);
     }
-    
+
     public function favorites()
     {
-        return $this->hasMany('App\Models\Favorite');
+        return $this->hasMany(Favorite::class);
     }
-    
+
     public function characters()
     {
-        return $this->hasMany('App\Models\Characters');
+        return $this->hasMany(Character::class);
     }
-    
+
     public function tags()
     {
-        return $this->belongsToMany('App\Models\Tag');
+        return $this->belongsToMany(Tag::class);
     }
 }

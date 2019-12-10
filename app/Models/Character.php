@@ -16,9 +16,9 @@ class Character extends Model
         'content',
         'story_id'
     ];
-    
+
     public function story()
     {
-        return $this->belongsTo('App\Models\Story');
+        return $this->belongsTo(Story::class);
     }
 }

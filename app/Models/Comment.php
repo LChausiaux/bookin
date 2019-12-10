@@ -10,14 +10,14 @@ class Comment extends Model
         'user_id',
         'chapter_id',
     ];
-    
+
     public function user()
     {
-        return $this->belongsTo('App\Models\User');
+        return $this->belongsTo(User::class);
     }
-    
+
     public function chapter()
     {
-        return $this->belongsTo('App\Models\Chapter');
+        return $this->belongsTo(Chapter::class);
     }
 }

@@ -12,14 +12,14 @@ class Chapter extends Model
         'position',
         'story_id',
     ];
-    
+
     public function story()
     {
-        return $this->belongsTo('App\Models\Story');
+        return $this->belongsTo(Story::class);
     }
-    
+
     public function comments()
     {
-        return $this->hasMany('App\Models\Comment');
+        return $this->hasMany(Comment::class);
     }
 }

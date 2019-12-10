@@ -13,10 +13,11 @@ class CreateStoryTagTable extends Migration
      */
     public function up()
     {
-        Schema::create('story_tags', function (Blueprint $table) {
+        Schema::create('story_tag', function (Blueprint $table)
+        {
             $table->bigIncrements('id');
             $table->timestamps();
-            
+
             $table->bigInteger('tag_id')->unsigned();
             $table->foreign('tag_id')->references('id')->on('tags')->onDelete('cascade');
             $table->bigInteger('story_id')->unsigned();
@@ -31,6 +32,6 @@ class CreateStoryTagTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('story_tags');
+        Schema::dropIfExists('story_tag');
     }
 }

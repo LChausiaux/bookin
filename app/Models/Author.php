@@ -9,9 +9,9 @@ class Author extends Model
     protected $fillable = [
         'name',
     ];
-    
+
     public function stories()
     {
-        return $this->hasMany('App\Models\Story');
+        return $this->hasMany(Story::class);
     }
 }

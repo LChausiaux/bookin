@@ -19,6 +19,5 @@ class DatabaseSeeder extends Seeder
         $this->call(CharactersSeeder::class);
         $this->call(FavoritesSeeder::class);
         $this->call(CommentsSeeder::class);
-        $this->call(StoryTagsSeeder::class);
     }
 }

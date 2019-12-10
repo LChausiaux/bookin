@@ -10,14 +10,14 @@ class Favorite extends Model
         'user_id',
         'story_id',
     ];
-    
+
     public function user()
     {
-        return $this->belongsTo('App\Models\User');
+        return $this->belongsTo(User::class);
     }
-    
+
     public function story()
     {
-        return $this->belongsTo('App\Models\Story');
+        return $this->belongsTo(Story::class);
     }
 }
