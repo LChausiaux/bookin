@@ -1,9 +1,9 @@
 <?php
 
-use App\Models\Character;
+use App\Models\ContentItem;
 use Illuminate\Database\Seeder;
 
-class CharactersSeeder extends Seeder
+class ContentItemsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,6 +12,6 @@ class CharactersSeeder extends Seeder
      */
     public function run()
     {
-        factory(Character::class, 400)->create();
+        factory(ContentItem::class, 5000)->create();
     }
 }

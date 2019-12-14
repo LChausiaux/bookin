@@ -12,6 +12,6 @@ class ChaptersSeeder extends Seeder
      */
     public function run()
     {
-        factory(Chapter::class, 50)->create();
+        factory(Chapter::class, 500)->create();
     }
 }

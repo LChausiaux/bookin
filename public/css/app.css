@@ -1,4 +1,28 @@
-@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+
+/**/
+
+nav {
+  padding: 0 50px;
+}
+
+nav .dropdown a {
+  margin-right: 8px;
+}
+
+nav .dropdown .dropdown-content {
+  padding: 10px 25px 0;
+}
+
+nav .dropdown .dropdown-content input {
+  margin-bottom: 10px;
+}
+
+.modal .modal-content {
+  background: white;
+  padding: 50px;
+  border-radius: 3px;
+}
 
 /*! bulma.io v0.8.0 | MIT License | github.com/jgthms/bulma */
 

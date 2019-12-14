@@ -22,4 +22,9 @@ class Chapter extends Model
     {
         return $this->hasMany(Comment::class);
     }
+
+    public function contentItems()
+    {
+        return $this->hasMany(ContentItem::class);
+    }
 }

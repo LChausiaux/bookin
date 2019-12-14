@@ -7,6 +7,9 @@
         <title>Laravel</title>
     </head>
     <body>
-        <a class="button is-primary">Primary</a>
+        <div id="app">
+            <navbar></navbar>
+        </div>
+        <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>

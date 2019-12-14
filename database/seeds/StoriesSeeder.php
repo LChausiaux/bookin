@@ -13,7 +13,7 @@ class StoriesSeeder extends Seeder
      */
     public function run()
     {
-        factory(Story::class, 200)->create();
+        factory(Story::class, 50)->create();
 
         // Get all the tags attaching up to 3 random tags to each user
         $tags = Tag::all();
