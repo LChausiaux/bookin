@@ -1,28 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
-
-/**/
-
-nav {
-  padding: 0 50px;
-}
-
-nav .dropdown a {
-  margin-right: 8px;
-}
-
-nav .dropdown .dropdown-content {
-  padding: 10px 25px 0;
-}
-
-nav .dropdown .dropdown-content input {
-  margin-bottom: 10px;
-}
-
-.modal .modal-content {
-  background: white;
-  padding: 50px;
-  border-radius: 3px;
-}
+@import url(https://fonts.googleapis.com/css?family=Lato);@charset "UTF-8";
 
 /*! bulma.io v0.8.0 | MIT License | github.com/jgthms/bulma */
 
@@ -12457,5 +12433,88 @@ label.panel-block:hover {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem;
+}
+
+body {
+  font-family: Lato, serif;
+}
+
+.button {
+  text-transform: uppercase;
+}
+
+.button.is-primary {
+  background-color: #EF6737;
+  font-weight: bold;
+}
+
+.button.is-primary:hover {
+  background-color: #ec4e16;
+  font-weight: bold;
+}
+
+.button.is-primary:active {
+  background-color: #e64a12;
+  font-weight: bold;
+}
+
+.button.is-primary:focus:not(:active) {
+  box-shadow: 0 0 0 0.125em rgba(239, 103, 55, 0.25);
+  font-weight: bold;
+}
+
+.button.is-light {
+  background-color: rgba(219, 219, 219, 0);
+  color: #EF6737;
+  font-weight: bold;
+}
+
+.button.is-light:hover {
+  background-color: rgba(219, 219, 219, 0.2);
+  color: #EF6737;
+  font-weight: bold;
+}
+
+.button.is-light:active {
+  background-color: rgba(239, 103, 55, 0.15);
+  color: #EF6737;
+  font-weight: bold;
+}
+
+.button.is-light:focus:not(:active) {
+  box-shadow: 0 0 0 0.125em rgba(219, 219, 219, 0.25);
+  color: #EF6737;
+  font-weight: bold;
+}
+
+nav {
+  padding: 0 50px;
+}
+
+nav .navbar-menu {
+  margin-left: 50px;
+}
+
+nav .navbar-menu a {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav .dropdown a {
+  margin-right: 8px;
+}
+
+nav .dropdown .dropdown-content {
+  padding: 10px 25px 0;
+}
+
+nav .dropdown .dropdown-content input {
+  margin-bottom: 10px;
+}
+
+.modal .modal-content {
+  background: white;
+  padding: 50px;
+  border-radius: 3px;
 }
 

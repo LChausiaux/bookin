@@ -676,7 +676,11 @@ var render = function() {
                       }
                     }
                   },
-                  [_c("strong", [_vm._v("Sign up")])]
+                  [
+                    _vm._v(
+                      "\n                        Sign up\n                    "
+                    )
+                  ]
                 ),
                 _vm._v(" "),
                 _c(
@@ -740,11 +744,7 @@ var staticRenderFns = [
         { staticClass: "navbar-item", attrs: { href: "https://bulma.io" } },
         [
           _c("img", {
-            attrs: {
-              src: "https://bulma.io/images/bulma-logo.png",
-              width: "112",
-              height: "28"
-            }
+            attrs: { src: "/img/logo.png", width: "112", height: "28" }
           })
         ]
       ),
@@ -780,7 +780,7 @@ var staticRenderFns = [
       ]),
       _vm._v(" "),
       _c("a", { staticClass: "navbar-item" }, [
-        _vm._v("\n                Documentation\n            ")
+        _vm._v("\n                Browse\n            ")
       ])
     ])
   }

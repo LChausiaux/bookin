@@ -2,9 +2,9 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://bulma.io">
-                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                <img src="/img/logo.png" width="112" height="28">
             </a>
-
+            
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
                data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
@@ -17,18 +17,18 @@
                 <a class="navbar-item">
                     Home
                 </a>
-
+                
                 <a class="navbar-item">
-                    Documentation
+                    Browse
                 </a>
-
+            
             </div>
-
+            
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
                         <a class="button is-primary" @click="showSignUpModal = true">
-                            <strong>Sign up</strong>
+                            Sign up
                         </a>
                         <a class="button is-light" @click="showLogInModal = true">
                             Log in
@@ -53,14 +53,16 @@
 </template>
 <script>
     export default {
-        data() {
+        data()
+        {
             return {
                 showSignUpModal: false,
                 showLogInModal: false
             }
         },
         methods: {
-            resetModals() {
+            resetModals()
+            {
                 this.showLogInModal = false;
                 this.showSignUpModal = false;
             }

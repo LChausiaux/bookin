@@ -1,18 +1,29 @@
 nav
 {
     padding : 0 50px;
-
+    
+    .navbar-menu
+    {
+        margin-left : 50px;
+        
+        a
+        {
+            text-transform : uppercase;
+            font-weight    : bold;
+        }
+    }
+    
     .dropdown
     {
         a
         {
             margin-right : 8px;
         }
-
+        
         .dropdown-content
         {
             padding : 10px 25px 0;
-
+            
             input
             {
                 margin-bottom : 10px;
