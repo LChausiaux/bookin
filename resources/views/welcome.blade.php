@@ -9,6 +9,7 @@
     <body>
         <div id="app">
             <navbar></navbar>
+            <ad cover="got-cover.jpg"></ad>
         </div>
         <script src="{{ asset('js/app.js') }}"></script>
     </body>

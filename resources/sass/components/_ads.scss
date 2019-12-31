@@ -1,0 +1,20 @@
+.custom-ad-wrapper
+{
+    display    : block;
+    background : red;
+    height     : 300px;
+    margin-top : 0;
+
+    .cover
+    {
+        padding         : 20px 0;
+        display         : flex;
+        justify-content : center;
+        align-items     : center;
+
+        img
+        {
+            height : 85%;
+        }
+    }
+}
