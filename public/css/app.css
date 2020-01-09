@@ -12446,6 +12446,7 @@ body {
 .button.is-primary {
   background-color: #EF6737;
   font-weight: bold;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .button.is-primary:hover {
@@ -12538,11 +12539,19 @@ nav .dropdown .dropdown-menu .dropdown-content input {
   border-radius: 3px;
 }
 
+.parallax-window {
+  background: transparent;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+}
+
 .custom-ad-wrapper {
   display: block;
-  background: red;
   height: 300px;
   margin-top: 0;
+  z-index: 2;
+  position: relative;
 }
 
 .custom-ad-wrapper .cover {
@@ -12557,5 +12566,26 @@ nav .dropdown .dropdown-menu .dropdown-content input {
 
 .custom-ad-wrapper .cover img {
   height: 85%;
+}
+
+.custom-ad-wrapper .text {
+  margin-top: 20px;
+}
+
+.custom-ad-wrapper .text h1,
+.custom-ad-wrapper .text p {
+  color: white;
+}
+
+.custom-ad-wrapper .text h1 {
+  text-transform: uppercase;
+}
+
+.custom-ad-wrapper .link {
+  margin-top: 55px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 
